@@ -1,0 +1,80 @@
+# Requisitos do CODESP CNAT
+
+- [ ]  O Usuário base tem como atributos:
+    - Id
+    - Nome
+    - Email
+    - Telefone
+    - Senha
+    - Data de Registro
+    - Ultima data de alteração
+    - Ultima data de login
+    - Matricula
+    - Tipo
+        - Administrador (Codesp)
+        - Aluno
+- [ ]  As entidades Material e Local teram os seguintes atributos:
+    - Id
+    - Nome
+    - Slug
+- [ ]  O Empréstimo terá os seguintes atributos:
+    - Id
+    - Id-user-funcionario
+    - Id-user-comodatario
+    - Data do Emprestimo
+    - Data de Recebimento Máxima
+    - Status do Emprestimo
+        - Solicitado
+        - Recusado
+        - Emprestado
+        - Entregue com sucesso
+        - Entregue com prejuízo
+        - Entregue com atraso
+        - Entregue com prejuízo e atraso
+    - Tipo de Emprestimo
+        - Local
+        - Material
+        - Os dois
+- [ ]  O Emprestimo-Material terá os seguintes atributos:
+    - Id
+    - Id-emprestimo
+    - Id-Material
+    - was-received (bool)
+- [ ]  O Emprestimo-Local terá os seguintes atributos:
+    - Id
+    - Id-emprestimo
+    - Id-Local
+- [ ]  A Multa terá os seguintes atributos:
+    - Id
+    - Id-emprestimo
+    - motivo
+    - valor
+    - Data de registro
+    - Data do pagamento
+- [ ]  O sistema precisa ter um sistema de login:
+    - [ ]  Logar
+    - [ ]  Registrar
+    - [ ]  Sair
+    - [ ]  Verificação de Email
+    - [ ]  Esqueci a Senha
+    - [ ]  Lembrar de mim
+    - [ ]  (Opcional) Verificação de Duas Etapas
+- [ ]  O Usuário base terá as seguintes configurações:
+    - [ ]  Alterar informações diretamente (exceto Matricula e Nome para Alunos)
+        - [ ]  Para alterar o nome ou matricula, deverá ser mandado pelo form o motivo da alteração, no qual o funcionário Codesp aceitará ou não a solicitação de alteração.
+    - [ ]  Deletar a Conta
+- [ ]  O Admin Codesp poderá fazer as seguintes funções:
+    - [ ]  Criar o Emprestimo
+    - [ ]  Finalizar Emprestimo
+        - [ ]  Com multa
+        - [ ]  Sem multa
+    - [ ]  CRUD dos materiais e locais
+        - [ ]  Criar
+        - [ ]  Atualizar
+        - [ ]  Deletar
+    - [ ]  Aceitar/Recusar alteração de informações
+    - [ ]  Aceitar/Recusar solicitação de emprestimo
+- [ ]  Na home do Aluno, caso não tenha nenhum emprestimo e nenhuma multa, o sistema terá que mostrar uma tela de bem vindo com as opções de emprestimos possiveis.
+    - [ ]  Caso tenha emprestimo, mostrar acima das opções todos os que não foram finalizados.
+    - [ ]  Caso tenha multa em sua matricula, mostrar um aviso acima dos empréstimos para sanar a divida.
+- [ ]  Se o Aluno tiver uma divida em sua matricula, o individuo não poderá fazer nenhum emprestimo até que seja pago.
