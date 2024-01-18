@@ -1,0 +1,71 @@
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: url('../assets/bg-hero.jpg') center center/cover;
+}
+
+section{
+    padding-top: 2.5rem;
+    padding-bottom: 1.2rem;
+    height: 100%;
+}
+
+h1{
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h4{
+    line-height: 1.5rem;
+}
+
+.form-container{
+    max-width: 18rem;
+    background: #111111;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 3px solid var(--brand-black);
+}
+
+input{
+    font-size: 0.7rem !important;
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+
+input::placeholder{
+    color: rgb(189, 189, 189) !important;
+}
+
+form button{
+    background-color: var(--brand-dark-green) !important;
+    color: var(--brand-white) !important;
+    border: 2px solid transparent;
+}
+
+form button:hover{
+    background-color: var(--brand-blue) !important;
+    color: var(--brand-white) !important;
+    border: 2px solid transparent;
+}
+
+form button:active{
+    background-color: transparent !important;
+    color: var(--brand-white) !important;
+    border: 2px solid var(--brand-white);
+}
+
+.image{
+    margin-top: -1.5rem;
+}
+
+.image img{
+    max-width: 16rem;
+    animation: floating 20s ease-in-out infinite;
+}
