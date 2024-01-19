@@ -1,15 +1,14 @@
 import express from 'express'
 import { Router, Request, Response } from 'express'
-
 const app = express()
 const route = Router()
+const port: number = 3333
+const router = require("./routes/routes")
+
+router(app);
 
 app.use(express.json())
 
-route.get('/', (req: Request, res: Response) => {
-    res.json({"message": 'teste'})
-})
-
 app.use(route)
 
-app.listen(3333, ()=> 'servidor rodando em 3333')
+app.listen(port, () => {console.log('Rodando na porta '+port)})
