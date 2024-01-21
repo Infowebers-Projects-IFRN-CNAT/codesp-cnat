@@ -4,7 +4,25 @@ html, body{
 }
 
 body{
-    background: url('../assets/bg-hero.jpg') center center/cover;
+    background-image: url('./src/assets/bg-ginasio.jpg');
+    background-position: center center;
+    background-size: cover;
+    animation: bgChange 25s 10s ease-in-out infinite;
+}
+
+@keyframes bgChange{
+    0%, 100%{
+        background-image: url('./src/assets/bg-ginasio.jpg');
+    }
+    25%{
+        background-image: url('./src/assets/bg-quadra.jpg');
+    }
+    50%{
+        background-image: url('./src/assets/bg-basquete.jpg');
+    }
+    75%{
+        background-image: url('./src/assets/bg-ping-pong.jpg');
+    }
 }
 
 section{
@@ -68,4 +86,43 @@ form button:active{
 .image img{
     max-width: 16rem;
     animation: floating 20s ease-in-out infinite;
+}
+
+.images-pseudo::before{
+    content: url('./src/assets/volleyball.svg');
+    position: absolute;
+    top: -2rem;
+    left: -12rem;
+    animation: floating 12s ease-in-out infinite;
+}
+
+.images-pseudo::after{
+    content: url('./src/assets/basketball.svg');
+    position: absolute;
+    top: -2rem;
+    right: -12rem;
+    animation: floating 12s 3s ease-in-out infinite;
+}
+
+@media screen and (max-width: 991px) {
+
+    h1{
+        font-size: 1.75rem !important;
+    }
+
+    .image::before{
+        content: url('./src/assets/ping-pong.svg');
+        position: absolute;
+        bottom: -2rem;
+        left: -12rem;
+        animation: floating 12s 2s ease-in-out infinite;
+    }
+    
+    .image::after{
+        content: url('./src/assets/soccerball.svg');
+        position: absolute;
+        bottom: -2rem;
+        right: -12rem;
+        animation: floating 12s 1s ease-in-out infinite;
+    }
 }
