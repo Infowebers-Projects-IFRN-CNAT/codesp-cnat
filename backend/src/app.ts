@@ -4,7 +4,7 @@ require('dotenv').config()
 const app = express()
 const route = Router()
 const port: number = 3333
-const router = require("./routes/routes")
+const router = require("./routes/routers")
 
 router(app);
 
