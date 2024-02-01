@@ -37,6 +37,11 @@ body {
   overflow-x: hidden;
   background-color: var(--brand-black);
   color: var(--brand-white);
+  height: 100%;
+}
+
+.root{
+  height: 100%;
 }
 
 img {
@@ -48,4 +53,8 @@ button {
   cursor: pointer;
   background-color: transparent;
   border: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
 }

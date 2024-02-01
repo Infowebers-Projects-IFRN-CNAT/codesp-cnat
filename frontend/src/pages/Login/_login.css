@@ -1,9 +1,5 @@
 
-html, body{
-    height: 100%;
-}
-
-body{
+html.home body{
     background-image: url('./src/assets/bg-ginasio.jpg');
     background-position: center center;
     background-size: cover;
@@ -25,13 +21,13 @@ body{
     }
 }
 
-section{
+.s-login{
     padding-top: 2.5rem;
     padding-bottom: 1.2rem;
     height: 100%;
 }
 
-h1{
+.s-login h1{
     max-width: 20rem;
     margin-right: auto;
     margin-left: auto;
@@ -39,11 +35,11 @@ h1{
     line-height: 2.5rem;
 }
 
-h4{
+.s-login h4{
     line-height: 1.5rem;
 }
 
-.form-container{
+.s-login .form-container{
     max-width: 18rem;
     background: #111111;
     padding: 1rem;
@@ -51,44 +47,44 @@ h4{
     border: 3px solid var(--brand-black);
 }
 
-input{
+.s-login input{
     font-size: 0.7rem !important;
     background-color: #1f1f1f !important;
     color: white !important;
 }
 
-input::placeholder{
+.s-login input::placeholder{
     color: rgb(189, 189, 189) !important;
 }
 
-form button{
+.s-login form button{
     background-color: var(--brand-dark-green) !important;
     color: var(--brand-white) !important;
     border: 2px solid transparent;
 }
 
-form button:hover{
+.s-login form button:hover{
     background-color: var(--brand-blue) !important;
     color: var(--brand-white) !important;
     border: 2px solid transparent;
 }
 
-form button:active{
+.s-login form button:active{
     background-color: transparent !important;
     color: var(--brand-white) !important;
     border: 2px solid var(--brand-white);
 }
 
-.image{
+.s-login .image{
     margin-top: -1.5rem;
 }
 
-.image img{
+.s-login .image img{
     max-width: 16rem;
     animation: floating 20s ease-in-out infinite;
 }
 
-.images-pseudo::before{
+.s-login .images-pseudo::before{
     content: url('./src/assets/volleyball.svg');
     position: absolute;
     top: -2rem;
@@ -96,7 +92,7 @@ form button:active{
     animation: floating 12s ease-in-out infinite;
 }
 
-.images-pseudo::after{
+.s-login .images-pseudo::after{
     content: url('./src/assets/basketball.svg');
     position: absolute;
     top: -2rem;
@@ -106,11 +102,11 @@ form button:active{
 
 @media screen and (max-width: 991px) {
 
-    h1{
+    .s-login h1{
         font-size: 1.75rem !important;
     }
 
-    .image::before{
+    .s-login .image::before{
         content: url('./src/assets/ping-pong.svg');
         position: absolute;
         bottom: -2rem;
@@ -118,7 +114,7 @@ form button:active{
         animation: floating 12s 2s ease-in-out infinite;
     }
     
-    .image::after{
+    .s-login .image::after{
         content: url('./src/assets/soccerball.svg');
         position: absolute;
         bottom: -2rem;
