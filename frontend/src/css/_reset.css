@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  src: url('../fonts/Nunito-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  src: url('../fonts/Nunito-Italic-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Bungee';
+  src: url('../fonts/Bungee-Regular.ttf') format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: 'Nunito', 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* font-size: 62.5%; */
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: var(--brand-black);
+  color: var(--brand-white);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
