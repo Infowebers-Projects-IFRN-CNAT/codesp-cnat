@@ -1,0 +1,85 @@
+header{
+    padding: .4rem 0;
+    background-color: var(--brand-dark-blue);
+}
+
+header h1{
+    font-size: 1.75rem;
+}
+
+header img{
+    font-size: .8rem;
+}
+
+header .dropdown svg{
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+header .dropdown svg:hover{
+    color: #00dfff;
+}
+
+header .drop{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    right: 0;
+    position: absolute;
+    top: 3.075rem;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    width: max-content;
+}
+
+header .drop.isOpen{
+    opacity: 1;
+}
+
+header .wrapper{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+header .wrapper.open{
+    width: 100%;
+}
+
+header nav{
+    position: relative;
+    z-index: 16;
+    padding: .6rem .5rem .9rem .5rem;
+}
+
+header nav h5{
+    color: var(--brand-black);
+    padding-bottom: .4rem;
+    border-bottom: 2px solid #bdbdbd;
+    margin-bottom: .4rem;
+    font-size: .65rem;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+header nav ul li{
+    line-height: .7rem;
+}
+
+header nav ul a{
+    text-decoration: none;
+    font-size: .75rem;
+    font-weight: bold;
+    color: var(--brand-black);
+}
+

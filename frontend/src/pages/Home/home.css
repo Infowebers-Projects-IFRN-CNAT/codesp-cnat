@@ -1,0 +1,60 @@
+.reservas{
+    gap: 2rem;
+}
+
+.reservas a{
+    background-color: #313131;
+    color: var(--brand-white);
+    padding: 2rem 1rem 2rem 3rem;
+    border-radius: .3rem;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    transition: all .4s ease;
+    border: 3px solid transparent;
+}
+
+.reservas a:hover{
+    border-color: var(--brand-white);
+    background-color: var(--brand-blue);
+}
+
+.reservas a:active{
+    background-color: transparent;
+}
+
+.reservas a:hover::after, 
+.reservas a:active::after{
+    transform: rotateY(180deg) scale(1.2) !important;
+    left: -2rem !important;
+    top: .75rem !important;
+}
+
+.reservas a::after{
+    position: absolute;
+    transition: all .4s ease;
+    left: -1.5rem;
+    top: 1rem;
+}
+
+.reservas a:first-of-type::after{
+    content: url('../../assets/ping-pong.svg');
+    transform: rotateY(180deg);
+}
+
+.reservas a:nth-child(2)::after{
+    content: url('../../assets/ping-pong.svg');
+}
+
+.reservas a:last-of-type::after{
+    content: url('../../assets/ping-pong.svg');
+}
+
+.reservas a h5, 
+.reservas a h4{
+    line-height: 1.2rem;
+}
+
+.reservas a h5{
+    font-size: .7rem;
+}
