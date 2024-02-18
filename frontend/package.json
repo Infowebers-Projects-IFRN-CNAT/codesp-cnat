@@ -21,7 +21,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "axios": "^1.6.7"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
